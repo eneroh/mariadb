@@ -6,12 +6,11 @@ sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo mysql -u root -p
 <input password>
 
-CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
-GRANT ALL PRIVILEGES ON mydb.* TO 'monty'@'localhost';
+CREATE DATABASE <database name>;
+CREATE USER '<user>'@'localhost' IDENTIFIED BY '<password>';
+GRANT ALL PRIVILEGES ON mydb.* TO '<user>'@'localhost';
 FLUSH PRIVILEGES;
 quit
 
-mysql -u en -p -h localhost
-<input password>
-
-CREATE DATABASE mydb;
+mysql -u <user> -p -h localhost
+<password>
