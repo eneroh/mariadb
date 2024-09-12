@@ -1,16 +1,26 @@
 === how to set up mariadb on archlinux ===
 
+1. Download mariadb from the repos
 sudo pacman -S mariadb
 
+2. Install the db and set up the base and data dirs
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+3. Log into mariadb/mysql with the root account, input any password
 sudo mysql -u root -p
 <input password>
 
+4. Create a database with a name you decide
 CREATE DATABASE <database name>;
+
+5. Create a user and set the password
 CREATE USER '<user>'@'localhost' IDENTIFIED BY '<password>';
+
+6. Grant the newly created account, perms and then flush the privileges and then quit
 GRANT ALL PRIVILEGES ON mydb.* TO '<user>'@'localhost';
 FLUSH PRIVILEGES;
 quit
 
+7. Log in with your newly created account and input the recently created password
 mysql -u <user> -p -h localhost
 <password>
