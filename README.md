@@ -19,11 +19,13 @@ Use _ instead of spaces
 Creates a database
 
 ```sql
+SHOW DATABASES;
+```
+Displays available databases
+
+```sql
 SHOW TABLES;
 ```
 Displays tables associated to database
-
-```sql
-
 ```
 
