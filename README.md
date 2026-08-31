@@ -21,6 +21,7 @@ Creates a database
 ```sql
 SHOW TABLES;
 ```
+Displays tables associated to database
 
 ```sql
 
