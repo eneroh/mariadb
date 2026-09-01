@@ -27,5 +27,19 @@ Displays available databases
 SHOW TABLES;
 ```
 Displays tables associated to database
+
+```sql
+USE <database/table>
 ```
+Use the specific database or table
+
+```sql
+INSERT INTO <table> VALUES('','','');
+```
+Place values into database
+
+```sql
+UPDATE <table> SET content = '' WHERE id='5';
+```
+Update item in table
 
